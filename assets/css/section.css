@@ -1,0 +1,238 @@
+
+/* about Us */
+
+#tabs {
+  text-align: center;
+}
+#tabs ul {
+  margin: 0;
+  padding: 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 0;
+  -moz-column-gap: 0;
+  column-gap: 0;
+}
+#tabs ul::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#tabs ul li {
+  display: block;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+#tabs ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  outline: 0;
+  padding-bottom: 30px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+#tabs ul li a:after {
+    transition: all 0.3s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+}
+#tabs ul li a:before {
+    transition: all 0.3s;
+    width: 25px;
+    height: 25px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+}
+#tabs ul li span {
+  display: block;
+  margin-bottom: 0.75em;
+}
+
+#tabs ul .ui-tabs-active a {
+  color: #f5a425;
+}
+#tabs ul .ui-tabs-active a:after {
+  background-color: #f5a425;
+  width: 15px;
+  height: 15px;
+}
+#tabs ul .ui-tabs-active a:before {
+  border-color: #f5a425;
+}
+#tabs h4 {
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+#tabs p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.tabs-content {
+    margin-top: 60px;
+    text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  
+  .tabs-content {
+      text-align: center;
+  }
+
+}
+
+.tabs-content img {
+    width: 100%;
+    overflow: hidden;
+    padding-right: 45px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .tabs-content img {
+      padding-right: 0px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  section.coming-soon .continer h4 {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  section.coming-soon .right-content {
+      margin-top: 60px;
+      margin-left: 0px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  section.video .left-content {
+    margin-bottom: 45px;
+  }
+
+  section.video .first-item .first-content h4,
+  section.video .second-item .second-content h4 {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
+  .mfp-img-mobile .mfp-image-holder {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mfp-img-mobile img.mfp-img {
+    padding: 0;
+  }
+
+  .mfp-img-mobile .mfp-figure:after {
+    top: 0;
+    bottom: 0;
+  }
+
+  .mfp-img-mobile .mfp-figure small {
+    display: inline;
+    margin-left: 5px;
+  }
+
+  .mfp-img-mobile .mfp-bottom-bar {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    margin: 0;
+    top: auto;
+    padding: 3px 5px;
+    position: fixed;
+    box-sizing: border-box;
+  }
+
+  .mfp-img-mobile .mfp-bottom-bar:empty {
+    padding: 0;
+  }
+
+  .mfp-img-mobile .mfp-counter {
+    right: 5px;
+    top: 3px;
+  }
+
+  .mfp-img-mobile .mfp-close {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media all and (max-width: 900px) {
+  .mfp-arrow {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+
+  .mfp-arrow-left {
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+  }
+
+  .mfp-arrow-right {
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%;
+  }
+
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .features { background-color: #0c1228; }
+  .features-content { position: relative; }
+  .features-post { border-left: 0 }
+}
+
+
+
+
+
